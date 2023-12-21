@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navMenu">
+            <p><a class="logo" href="#1">ITLogo</a></p>
+            <nav>
+                <ul class="navList">
+                    <li><a href="#2">Обо мне</a></li>
+                    <li><a href="#3">Портфолио</a></li>
+                    <li><a href="#4">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="mainPage element-animation" id="1">
+            <div class="space"></div>
+            <div class="wrapper">
+                <h1 class="title">
+                    <strong>Anton Zayartsev</strong><br>
+                    frontend developer
+                </h1>
+                <a href="#4" class="btn"><span>Связаться</span></a>
+            </div>
+        </div>
+        <div class="informationPage">
+            <div class="aboutMe container element-animation" id="2">
+                <div class="titleContain">
+                    <h2 class="title-1 element-animation">Обо мне</h2>
+                </div>
+                <div class="AMCont">
+                    <div class="aboutMeText element-animation"><p>Меня зовут Антон, я - front-end разработчик с большой страстью к созданию красивых и функциональных веб-сайтов. У меня есть опыт работы с HTML, CSS и JavaScript, а также с использованием фреймворка React. Я всегда стремлюсь к саморазвитию и следую последним трендам в веб-разработке, чтобы создавать современные и интуитивно понятные пользовательские интерфейсы. Если у вас есть проект, который нуждается во фронтенд разработке, я с удовольствием смогу вам помочь.</p></div>
+                    <div class="skills element-animation">
+                        <div class="css block">
+                            <div class="blackLine"><div class="whiteLine CSSLine"></div></div>
+                            <p class="skillText">CSS</p></div>
+                            <div class="html block">
+                                <div class="blackLine"><div class="whiteLine HTMLLine"></div></div>
+                                <p class="skillText">HTML</p>
+                            </div>
+                            <div class="js block">
+                            <div class="blackLine"><div class="whiteLine JSLine"></div></div>
+                            <p class="skillText">JS</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects container element-animation" id="3">
+                <div class="titleContain">
+                    <h2 class="title-1">Портфолио</h2>
+                </div>
+                <ul class="project">
+                    <li class="projectList">
+                        <a href="https://tholpt.github.io/bee/"><img src="img/bee.png" alt="" class="projectImg"></a>
+                    </li>
+                    <li class="projectList">
+                        <a href="https://tholpt.github.io/zhk_melodya/"><img src="img/melody.png" alt="" class="projectImg"></a>
+                    </li>
+                    <li class="projectList">
+                        <a href="https://tholpt.github.io/gar/"><img src="img/GAR.png" alt="" class="projectImg"></a>
+                    </li>
+                    <li class="projectList">
+                        <a href="https://tholpt.github.io/visitka/"><img src="img/152.png" alt="" class="projectImg"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="form element-animation" id="4">
+                <form class="form2">
+                    <h2 class="titleForm">Свяжитесь с нами</h2>
+                    <input type="text" placeholder="Write your name here.." class="input" required>
+                    <input type="Email" placeholder="E-mail" class="input" required>
+                    <input type="text" placeholder="Message" class="input" required>
+                    <p><button>Отправить</button></p>
+                  </form>
+            </div>
+        </div>
+
+
+    </main>
+    <script src="JavaScript.js"></script>
+    <footer>
+        @Profile 2023 | Anton Zayartsev
+    </footer>
+</body>
+</html>

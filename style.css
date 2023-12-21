@@ -1,0 +1,347 @@
+* {
+    font-family: 'Play', sans-serif;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    position: fixed;
+    top: 0%;
+    z-index: 999999;
+}
+
+.navMenu {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navList {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    float: right;
+
+}
+
+.navList li {
+    margin-right: 120px;
+}
+
+.navList a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.navList li a:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: black; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.navList li a:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: white; /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+.logo {
+    width: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(37, 37, 37, 0.5);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.wrapper {
+    padding: 0 15px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.title strong {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+
+.mainPage {
+  padding: 40px 0;
+  height: 1000px;
+    width: 100%;
+    top: initial;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    background: url(img/Безымянный.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    
+    box-shadow: 1px 1px 100px 100px rgb(0, 0, 0) inset;
+    text-align: center;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectList {
+    margin: auto;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 40px;
+}
+
+.projectImg {
+    width: 700px;
+    height: 500px;
+    border-radius: 10px;
+    filter: grayscale(1); /* Черно-белый фильтр для изображения */
+    transition: 0.5s; /* Время изменения цвета изображения */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}    
+
+.projectImg:hover {
+    filter: grayscale(0); /* Цветное изображение при наведении */
+}
+
+.title-1 {
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    width: 400px;
+    padding-bottom: 5px;
+}  
+
+.space {
+    width: 50%;
+}
+
+.btn{
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  .btn span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  .btn:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    transition: all .35s;
+  }
+  
+  .btn:hover{
+    color: black
+  }
+  
+  :hover:after{
+    width: 100%;
+  }
+
+  .informationPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+
+  .titleContain {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .container {
+    background-color: #222222;
+    width: 90%;
+    border-radius: 16px;
+    border: 5px solid #333;
+    margin-bottom: 60px;
+  }
+
+  .blackLine {
+    width: 50px;
+    height: 250px;
+    border: 3px solid #636363;
+    background-color: white;
+  }
+
+  .whiteLine {
+    background-color: black;
+    width: 50px;
+  }
+
+  .JSLine {
+    height: 90%;
+  }
+
+  .CSSLine {
+    height: 40%;
+  }
+
+  .HTMLLine {
+    height: 10%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .block {
+    margin: 40px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .AMCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .aboutMeText {
+    font-size: 25px;
+    width: 800px;
+  }
+
+  input {
+    background-color: #22222200;
+    border: 0px;
+    border-bottom: 1px solid white;
+    width: 500px;
+    height: 50px;
+    color: white;
+    font-size: 25px;
+  }
+
+  .titleForm {
+    text-align: center;
+    color:white;
+    font-size: 50px;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+  }
+
+  .form2 {
+    background-color: #222222;
+    border-radius: 16px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  button {
+    background-color: #22222200;
+    border: 0px;
+  }
+
+  .element-animation {
+    
+    /* Скроем элемент в начальном состоянии */
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .element-animation.show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    color: white;
+    background-color: #22222200;
+    border: 1px solid white;
+    width: 200px;
+    height: 50px;
+    transition: all .35s;
+  }
+
+  button:hover{
+    color: #222222;
+    background-color: white;
+  }
